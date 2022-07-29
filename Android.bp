@@ -26,6 +26,17 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+	name: "OppoEngineerMode",
+	owner: "oppo",
+	apk: "proprietary/app/OppoEngineerMode/OppoEngineerMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 dex_import {
 	name: "mtk-wifi-service",
 	owner: "oppo",

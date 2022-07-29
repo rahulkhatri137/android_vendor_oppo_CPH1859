@@ -9,8 +9,22 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/CPH1859/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/oppo/CPH1859/proprietary/bin/iwpriv:$(TARGET_COPY_OUT_SYSTEM)/bin/iwpriv \
     vendor/oppo/CPH1859/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    vendor/oppo/CPH1859/proprietary/lib/libem_aal_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_aal_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_audio_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_gpio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_gpio_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_sensor_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_sensor_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_wifi_jni.so \
     vendor/oppo/CPH1859/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/oppo/CPH1859/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_aal_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_aal_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_audio_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_gpio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_gpio_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_sensor_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_sensor_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_support_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_usb_jni.so \
+    vendor/oppo/CPH1859/proprietary/lib64/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_wifi_jni.so \
     vendor/oppo/CPH1859/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/oppo/CPH1859/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/oppo/CPH1859/proprietary/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/030b0000000000000000000000000000.drbin \
@@ -1512,6 +1526,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SoterService \
     ImsService \
+    OppoEngineerMode \
     mtk-wifi-service \
     manifest_android.hardware.drm@1.3-service.widevine \
     vibrator-mtk-default
